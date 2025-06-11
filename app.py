@@ -30,6 +30,7 @@ st.set_page_config(page_title="Amazon Sales Dashboard", layout="wide")
 st.title("📊 Amazon Sales Dashboard with AI Insights")
 
 # ─── Sidebar: File Upload & Filters ─────────────────────────────────────────
+st.sidebar.header("By Khurram Rashid")
 st.sidebar.title("🔎 Customize Dashboard")
 
 # 3.1 CSV Upload or Default
