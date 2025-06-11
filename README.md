@@ -1,47 +1,45 @@
-```markdown
-# Amazon Sales Dashboard with AI Insights
+````markdown
+# 📊 Amazon Sales Dashboard with AI Insights
 
-An interactive Streamlit dashboard for visualizing and analyzing Amazon sales data, enriched with AI-generated business insights via Google GenAI (Gemini).
+An **interactive**, single-page Streamlit app to explore Amazon sales data with **AI-powered** recommendations.
 
-## 🚀 Features
+---
 
-- **Sales Overview**: Monthly sales trends line chart  
-- **Product Analysis**: Top categories and sizes by quantity/orders  
-- **Fulfillment Analysis**: Pie chart & status breakdown for fulfillment methods  
-- **Customer Segmentation**: B2C vs. B2B sales comparison  
-- **Geographical Analysis**: Top-N states and cities by revenue/orders  
-- **KPI Metrics**: Total sales, total orders, average order value  
-- **AI Insights**: One-click Gemini-powered, contextual insights based on your filters  
-- **Full Sidebar Customization**: Date range, categories, sizes, fulfillment methods, B2B toggle, Top-N sliders  
-- **Data Export & Search**: Download filtered data; search orders by ID  
-- **File Upload**: Drop-in CSV upload to override default dataset  
+## 🔗 Quick Links
 
-## 📁 Repository Structure
+- [Live Demo](#) • 
+- [Getting Started](#getting-started) • 
+- [Features](#features) • 
+- [Usage](#usage) • 
+- [Deployment](#deployment) • 
+- [Contributing](#contributing) • 
+- [License](#license)
 
-```
+---
 
-amazon-dashboard/
-├── dashboard.py          # Main Streamlit application
-├── Amazon Sale Report.csv# Sample dataset (rename if needed)
-├── requirements.txt      # Python dependencies
-└── README.md             # Project documentation
+## 🖼️ Features
 
-````
+- **KPI Metrics**: Total Sales, Total Orders, Avg. Order Value  
+- **Sales Overview**: Interactive monthly trends chart  
+- **Product Analysis**: Top categories & sizes by volume  
+- **Fulfillment Analysis**: Pie & bar breakdown of methods & statuses  
+- **Customer Segmentation**: B2C vs. B2B visualization  
+- **Geographical Analysis**: Top-N states & cities filters  
+- **AI Insights**: One-click Gemini-powered business recommendations  
+- **Full Sidebar**: Date range, category/size filters, B2B toggle, Top-N sliders  
+- **Extras**: CSV upload/download, Order ID search, real-time filtering  
 
-## 🛠️ Prerequisites
+---
 
-- Python 3.8+  
-- Google GenAI API key (Gemini)  
+## 📥 Getting Started
 
-## ⚙️ Installation
-
-1. **Clone the repo**  
+1. **Clone repository**  
    ```bash
    git clone https://github.com/your-username/amazon-dashboard.git
    cd amazon-dashboard
 ````
 
-2. **Create & activate a virtual environment**
+2. **Create & activate virtual environment**
 
    ```bash
    python3 -m venv venv
@@ -55,65 +53,52 @@ amazon-dashboard/
    pip install -r requirements.txt
    ```
 
-4. **Configure API Key**
+4. **Configure API key**
 
-   * Set environment variable:
+   * **Option A**: Set env var
 
      ```bash
-     export GENAI_API_KEY="YOUR_GEMINI_API_KEY"   # macOS/Linux
-     set GENAI_API_KEY="YOUR_GEMINI_API_KEY"      # Windows
+     export GENAI_API_KEY="YOUR_GEMINI_KEY"   # macOS/Linux
+     set GENAI_API_KEY="YOUR_GEMINI_KEY"      # Windows
      ```
-   * Or replace the placeholder in `dashboard.py`:
+   * **Option B**: Edit `dashboard.py` and replace the placeholder.
 
-     ```python
-     genai.configure(api_key="YOUR_GEMINI_API_KEY")
-     ```
+5. **Place your data**
+
+   * Ensure `Amazon Sale Report.csv` is in the root folder (or upload via sidebar).
+
+---
 
 ## ▶️ Usage
 
-Run the Streamlit app locally:
+Run locally:
 
 ```bash
 streamlit run dashboard.py
 ```
 
-* Open [http://localhost:8501](http://localhost:8501) in your browser.
-* Use the sidebar to filter data, upload your own CSV, and generate AI insights.
+* Open [http://localhost:8501](http://localhost:8501)
+* Use sidebar controls to filter data, upload new CSVs, and generate AI insights!
+
+---
 
 ## ☁️ Deployment
 
-1. **Push to GitHub**
+1. Push to GitHub:
 
    ```bash
    git add .
-   git commit -m "Initial commit"
+   git commit -m "Add Streamlit dashboard"
    git push origin main
    ```
-
-2. **Deploy on Streamlit Cloud**
+2. On **Streamlit Cloud**:
 
    * Go to [share.streamlit.io](https://share.streamlit.io/)
-   * Connect your GitHub repo and select `dashboard.py`
-   * Set the `GENAI_API_KEY` in the Secrets section
+   * Connect your repo, point to `dashboard.py`
+   * Set `GENAI_API_KEY` in Secrets
    * Click **Deploy**
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/YourFeature`)
-3. Commit your changes (`git commit -m "Add YourFeature"`)
-4. Push to the branch (`git push origin feature/YourFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgements
-
-* [Streamlit](https://streamlit.io/) for the rapid dashboard framework
-* [Plotly Express](https://plotly.com/python/plotly-express/) for interactive charts
-* [Google GenAI (Gemini)](https://developers.generativeai.google/) for AI-powered insights
+---
 
 ```
 ```
