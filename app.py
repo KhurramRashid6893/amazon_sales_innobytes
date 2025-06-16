@@ -3,6 +3,7 @@ import pandas as pd
 import plotly.express as px
 from google import genai
 
+
 # ─── Configure GenAI Client ────────────────────────────────────────────────
 client = genai.Client(api_key="AIzaSyDS1336LlHoyxTfvkJCgRRl4cpO34jtfl4")
 
