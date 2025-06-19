@@ -31,9 +31,4 @@ An **interactive**, single-page Streamlit app to explore Amazon sales data with 
 
 ---
 
-## 📥 Getting Started
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/amazon-dashboard.git
-   cd amazon-dashboard
+**By Khurram Rashid**
