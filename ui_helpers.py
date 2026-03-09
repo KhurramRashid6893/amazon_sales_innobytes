@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 from io import BytesIO
-from reportlab.lib.pagesizes import letter
+from reportlab.lib.pagesizes import letter 
 from reportlab.pdfgen import canvas as pdf_canvas
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.platypus import Paragraph
